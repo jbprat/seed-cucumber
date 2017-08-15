@@ -18,10 +18,4 @@ export = function steps() {
             EnterTheName.of(name),
         );
     });
-
-    this.Then(/^he should be greeted with "([^"]*)"$/, function(message) {
-        return stage.theActorInTheSpotlight().attemptsTo(
-            CheckIfDisplayedMessage.reads(message),
-        );
-    });
 };

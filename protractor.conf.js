@@ -8,7 +8,7 @@ exports.config = {
 
     baseUrl: 'https://www.angularjs.org/',
 
-    seleniumServerJar: seleniumJar,
+    seleniumAddress: 'http://localhost:4444/wd/hub',
 
     // https://github.com/angular/protractor/blob/master/docs/timeouts.md
     allScriptsTimeout: 110000,
@@ -24,7 +24,7 @@ exports.config = {
         compiler:   'ts:ts-node/register'
     },
 
-    capabilities: {
+    multiCapabilities: [{
         browserName: 'chrome',
 
         chromeOptions: {
@@ -35,5 +35,7 @@ exports.config = {
                 // "--window-size=1024x768"
             ]
         }
-    }
+    }, {
+        browserName: 'firefox'
+    }]
 };
