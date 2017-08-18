@@ -3,7 +3,6 @@
 *.iml
 
 # Serenity/JS output
-target
 
 # Node
 node_modules

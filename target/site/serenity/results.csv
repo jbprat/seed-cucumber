@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Greeting developers by name","The Basics","SUCCESS","2017-08-14T23:14:00.244-04:00","0.0","4.44"
+"Greeting developers by name","The Basics","FAILURE","2017-08-14T23:14:01.341-04:00","0.0","4.6"
